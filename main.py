@@ -40,7 +40,6 @@ async def which_command(message,author):
         if(i>1):
             message+=command[i];
         
-    print("message",message)
     if(command[1] == "/chat"):
         response = gemini.chat(message=message)
         if(response):
